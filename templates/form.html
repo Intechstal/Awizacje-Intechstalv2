@@ -11,12 +11,19 @@
     {% endif %}
     <form action="/zapisz" method="post">
         Firma: <input type="text" name="firma" value="{{ dane.firma or '' }}" required><br>
+        
         Rejestracja: <input type="text" name="rejestracja" value="{{ dane.rejestracja or '' }}" required><br>
+        
         Kierowca: <input type="text" name="kierowca" value="{{ dane.kierowca or '' }}" required><br>
+        
         Email: <input type="email" name="email" value="{{ dane.email or '' }}"><br>
+        
         Telefon: <input type="text" name="telefon" value="{{ dane.telefon or '' }}" required><br>
+        
         Typ ładunku: <input type="text" name="typ_ladunku" value="{{ dane.typ_ladunku or '' }}"><br>
+        
         Waga ładunku: <input type="text" name="waga_ladunku" value="{{ dane.waga_ladunku or '' }}"><br>
+        
         Komentarz: <input type="text" name="komentarz" value="{{ dane.komentarz or '' }}"><br><br>
 
         <label for="data_godzina">Data i godzina:</label>
